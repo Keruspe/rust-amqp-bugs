@@ -1,0 +1,8 @@
+[package]
+name = "bug"
+version = "0.1.0"
+authors = ["Marc-Antoine Perennou <Marc-Antoine@Perennou.com>"]
+
+[dependencies]
+amqp          = "^0.0.19"
+std-semaphore = "^0.1.0"
