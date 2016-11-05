@@ -28,8 +28,8 @@ fn main() {
                 get_result.ack();
             }
 
-            println!("No more messages, waiting for 60 seconds");
-            thread::sleep(Duration::from_secs(60));
+            println!("No more messages, waiting for 6 seconds");
+            thread::sleep(Duration::from_secs(6));
             _sem.release();
         });
     }
