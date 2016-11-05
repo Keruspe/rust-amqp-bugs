@@ -24,6 +24,7 @@ fn main() {
         thread::spawn(move || {
             for get_result in channel.basic_get("keruspe.bug.test", false) {
                 println!("New message: {}", String::from_utf8_lossy(&get_result.body));
+                thread::sleep(Duration::from_secs(2));
                 get_result.ack();
             }
 
